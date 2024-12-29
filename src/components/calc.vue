@@ -89,6 +89,7 @@ const clear = () => {
 };
 </script>
 
+
 <style scoped>
 .calculator {
   max-width: 260px;
@@ -99,4 +100,36 @@ const clear = () => {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.display input {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  background-color: #d0d0d0;
+}
 </style>
